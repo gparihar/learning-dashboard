@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Learning Dashboard
 
-## Getting Started
+A modern and responsive Learning Dashboard built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Supabase**. The dashboard displays course progress, learning streaks, and activity tracking with a clean dark-themed UI.
 
-First, run the development server:
+## 🚀 Live Demo
+
+🔗 https://learning-dashboard-qn4u.vercel.app/
+
+## 📂 GitHub Repository
+
+🔗 https://github.com/gparihar/learning-dashboard
+
+---
+
+## ✨ Features
+
+- 📊 Course Progress Tracking
+- 🔥 Learning Streak Display
+- 📈 Activity Grid Visualization
+- ⚡ Real-time Data from Supabase
+- 🎨 Modern Dark UI Design
+- 📱 Fully Responsive Layout
+- 🚀 Fast Performance with Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+
+### Backend & Database
+- Supabase
+
+### Deployment
+- Vercel
+
+---
+
+## 📸 Screenshot
+
+![Learning Dashboard](https://learning-dashboard-qn4u.vercel.app/og-image.png)
+
+---
+
+## 📁 Project Structure
+
+```bash
+learning-dashboard/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── Sidebar.tsx
+│   ├── HeroCard.tsx
+│   ├── ActivityCard.tsx
+│   ├── CourseCard.tsx
+│   └── BentoGrid.tsx
+│
+├── lib/
+│   └── supabase.ts
+│
+├── public/
+├── types/
+├── .env.local
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/gparihar/learning-dashboard.git
+cd learning-dashboard
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗄️ Supabase Database Schema
 
-To learn more about Next.js, take a look at the following resources:
+### courses
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Column | Type |
+|----------|----------|
+| id | uuid |
+| title | text |
+| progress | int4 |
+| icon_name | text |
+| created_at | timestamp |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 Learning Dashboard Data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Course | Progress |
+|----------|----------|
+| Advanced React Patterns | 75% |
+| Next.js Mastery | 60% |
+| TypeScript Deep Dive | 45% |
+| UI Animation Design | 90% |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📌 Future Improvements
+
+- User Authentication
+- Progress Updates
+- Course Creation
+- Analytics Dashboard
+- Charts & Graphs
+- Profile Management
+
+---
+
+## 👨‍💻 Author
+
+**Gaurav Parihar**
+
+- GitHub: https://github.com/gparihar
+- LinkedIn: www.linkedin.com/in/gaurav-parihar-13a506288
+
+---
+
+## 📄 License
+
+This project is created for learning and internship purposes.
+
+MIT License © 2026 Gaurav Parihar
